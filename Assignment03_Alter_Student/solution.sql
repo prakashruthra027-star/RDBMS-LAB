@@ -10,10 +10,12 @@ CREATE TABLE Student(
     DepartmentID INT(5)
 );
 
--- Alter Student table
+ALTER TABLE Student
+ADD Email VARCHAR(30) UNIQUE;
 
--- Add Email
+ALTER TABLE Student
+ADD PhoneNumber DECIMAL(10,0);
 
--- Add PhoneNumber
+DESCRIBE Student;
 
--- Display structure
+
