@@ -11,13 +11,17 @@ CREATE TABLE Student(
     Email VARCHAR(30),
     PhoneNumber BIGINT
 );
+INSERT INTO Department (DepartmentID, DepartmentName, HOD)
+VALUES
+(101, 'Computer Science', 'Dr. Kumar'),
+(102, 'Information Tech', 'Dr. Ravi'),
+(103, 'Electronics', 'Dr. Suresh');
 
--- Insert
+INSERT INTO Student
+(StudentID, StudentName, Gender, DepartmentID)
+VALUES
+(1001, 'Arun', 'Male', 101),
+(1002, 'Divya', 'Female', 102),
+(1003, 'Karthik', 'Male', 101);
 
--- 1001 Arun
-
--- 1002 Divya
-
--- 1003 Karthik
-
--- Display all records
+SELECT * FROM Student;
